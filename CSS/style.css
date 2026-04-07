@@ -192,6 +192,15 @@ input, textarea {
     align-items: flex-start;
     gap: 50px;            /* Espace entre les deux blocs */
   }
+  .menu-toogle{
+    display: block;
+  }
+}
+.menu-toogle{
+    display: none;
+    font-size: 30px;
+    color: #00ffcc;
+    margin: 5px ;
 }
 /* A PROPOS */
 .part1{
