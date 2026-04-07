@@ -6,6 +6,9 @@ body{
     background-color: #0d4833 ;
     margin: 0;
     font-family: 'playfair display',serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 ul li{
@@ -25,6 +28,7 @@ h1{
     font-style: italic;
     align-items: center;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -157,9 +161,42 @@ button:hover{
         top: 0;
     }
 }
+/* Conteneur principal */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement sur mobile */
+  align-items: center;    /* Centre horizontalement les enfants */
+  justify-content: center;
+  width: 90%;             /* Évite que le bloc touche les bords de l'écran */
+  margin: 0 auto;         /* Centre le conteneur lui-même */
+  padding: 20px;
+}
+
+/* Le formulaire */
+.contact-right {
+  width: 100%;            /* Prend toute la largeur du parent */
+  max-width: 400px;       /* Empêche de devenir trop large sur grand écran */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Les champs de saisie */
+input, textarea {
+  width: 100%;            /* Force les champs à rester dans le formulaire */
+  box-sizing: border-box; /* Très important : inclut le padding dans la largeur */
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;  /* Aligne le texte et le formulaire horizontalement */
+    align-items: flex-start;
+    gap: 50px;            /* Espace entre les deux blocs */
+  }
+}
 /* A PROPOS */
 .part1{
     margin: 20px;
+    margin-top: 0;
 }
 #zone1{
     align-items: center;
