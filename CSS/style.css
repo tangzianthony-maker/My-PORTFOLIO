@@ -201,6 +201,13 @@ input, textarea {
     font-size: 30px;
     color: #00ffcc;
     margin: 5px ;
+    cursor: pointer;
+}
+/* LES 3 BARRES */
+.menu-toogle span {
+    display: block;
+    width: 30px;
+    height: 3px;margin: 6px 0;
 }
 /* A PROPOS */
 .part1{
