@@ -15,15 +15,15 @@
         <nav class="navbar">
     <p class="indice">TA<a href="#"></a></p>
 
-    <ul class="zone">
+    <ul class="zone" id="zone">
         <li>
                 <a href="#apropos">À Propos</a>
-                <a href="#Competences">Compétences</a>
+                <a href="#Compétences">Compétences</a>
                 <a href="#Parcours">Parcours</a>
-                <a href="#contact">Contact</a>
+                <a href="#Contact">Contact</a>
         </li>
     </ul>
-    <div class="menu-toogle" onclick="toggleMenu()">
+    <div class="burger-menu" id="burger-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -35,22 +35,23 @@
     <!-- FIRST PAGE -->
     <header class="page1">
         <div class="text">
-            <p class="subtitle">DEVELOPPEUR WEB. ETUDIANT EN INFORMATIQUE</p>
-        <h1>
-            TANGZI <br>
-            <em>ANTHONY</em>
-        </h1>
-        <p class="description">Passionné par la creation d'experiences web <br>modernes et accessibles.En route vers le <br> developpement front-end.</p><br> 
-    <button type="button">
-        <a href="https://wa.me/237671047464">ME CONTACTER</a>
-        
-    </button>
-        </div>
-
+            <div class="text-hero">
+                        <p class="subtitle">DEVELOPPEUR WEB. ETUDIANT EN INFORMATIQUE</p>
+                                <h1>
+                                    TANGZI <br>
+                                    <em>ANTHONY</em>
+                                </h1>
+                        <p class="description">Passionné par la creation d'experiences web <br>modernes et accessibles.En route vers le <br> developpement front-end.</p><br> 
+            <button type="button">
+                <a href="https://wa.me/237671047464">ME CONTACTER</a>
+            </button>
+            </div>
+   
     <div class="image">
         <div class="circle"></div>
             <img src="photo.jpeg" alt=" ma photo de profil"  width="200">
         
+        </div>
     </div>
     </header><br>
 
@@ -211,6 +212,16 @@
             </footer>
 
 
-     
+        <script>
+  // On récupère le bouton et la liste de liens grâce à leurs ID
+    const menuHamburger = document.querySelector("#burger-menu");
+    const zone = document.querySelector("#zone");
+
+  // On écoute le clic sur le bouton
+    menuHamburger.addEventListener('click', () => {
+      // "toggle" ajoute la classe si elle n'est pas là, et l'enlève si elle y est
+        zone.classList.toggle('active');
+    });
+        </script>
 </body>
 </html>
