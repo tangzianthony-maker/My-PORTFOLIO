@@ -36,6 +36,10 @@ h1{
     padding: 10px 20px;
     background-color:rgb(0, 0, 0);
 }
+u{
+    color: #00ffcc;
+    text-decoration: none;
+}
 .indice{
     font-size: 15px;
     margin-right: 10px;
@@ -94,12 +98,13 @@ h1{
 }
 button{
     border-radius: 8px; 
-    background-color: black;
+    background-color: rgb(127, 114, 114);
     padding: 12px 25px;
     cursor: pointer;
     border: none;
     color: darkslategray;
-    list-style: none;
+    text-decoration: none;
+    font-style: italic;
 }
 button:hover{
     background-color: darkseagreen;
@@ -431,7 +436,7 @@ footer{
 .burger-menu span {
   width: 25px;
   height: 3px;
-  background-color:darkseagreen;
+  background-color:#00ffcc;
 }
 
 /* Version Mobile */
