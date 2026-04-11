@@ -38,11 +38,12 @@ u{
     text-decoration: none;
 }
 .zone a{
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size:18px ;
     color: mediumspringgreen;
     transition: none;
     text-decoration: none;
+    font-weight: 500;
     
 }
 .zone a:hover{

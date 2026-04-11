@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+gdocument.addEventListener("DOMContentLoaded", () => {
     
     /* =========================================================
        1. CREATION ET PLACEMENT DU BOUTON DE THEME
