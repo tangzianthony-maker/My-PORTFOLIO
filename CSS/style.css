@@ -1,16 +1,13 @@
-*{
-    padding: 0;
-}
+
 /* PREMIERE PAGE */
 body{
-    background-color:white ;
+    background-color:aliceblue ;
     margin: 0;
     font-family: 'playfair display',serif;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
-
 ul li{
     align-content: center;
     display: flex;
@@ -39,14 +36,6 @@ h1{
 u{
     color: #00ffcc;
     text-decoration: none;
-}
-.indice{
-    font-size: 15px;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    color: #aaa;
 }
 .zone a{
     font-size: large;
@@ -130,6 +119,15 @@ button:hover{
 .theme{
     font-size: 50px;
 }
+.theme-btn{
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
 /* Style pour smartphones */
 @media screen and (max-width: 800px) {
     /* 1. On empile les cartes de compétences verticalement */
@@ -473,4 +471,23 @@ footer{
     display: flex;
     flex-direction: column;
   }
+} 
+/* Couleurs par défaut (Mode Clair) */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Couleurs quand le Mode Sombre est activé */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #f4f4f4 !important;
+}
+
+/* N'oublie pas d'adapter tes sections spécifiques aussi */
+body.dark-mode section, 
+body.dark-mode .product-info-block {
+    background-color: #252525;
+    color: #ffffff;
 }
